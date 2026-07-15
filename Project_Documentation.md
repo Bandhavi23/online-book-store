@@ -565,7 +565,27 @@ The system was verified using API test sweeps across different roles:
 * **Live Review Aggregation:** Verified that posting reviews recalculates the target book’s average score. Review 1 (score 5) and Review 2 (score 3) update the book rating to `4.0` in real-time.
 
 ### 10.3 Manual Interface Walkthrough
-* **Dashboard Rendering:** Admin login redirects to the dashboard, rendering charts using custom HTML `<svg>` vectors. Tooltips display correct data values on hover.
+
+* **System Analytics Dashboard:** Renders platform metrics and custom SVG analytics charts, tracking order status distributions, book genre distributions, and sales revenue trends over the last 10 days.
+
+  ![System Analytics Dashboard](./screenshots/admin_dashboard.png)
+
+* **Catalog Moderation Panel:** Provides administrators with a table to review, search, and delete book catalog listings.
+
+  ![Catalog Moderation](./screenshots/admin_catalog_moderation.png)
+
+* **Manage Sellers Panel:** Allows administrators to verify new stores, approve storefront registrations, or block violating vendors.
+
+  ![Manage Sellers](./screenshots/admin_manage_sellers.png)
+
+* **Manage Users Panel:** Displays registered reader/customer accounts, listing joined dates, addresses, contact details, and deletion controls.
+
+  ![Manage Users](./screenshots/admin_manage_users.png)
+
+* **Add New Book Panel (Seller Portal):** Form interface for approved booksellers to upload cover artwork and configure inventory details (title, price, stock, description).
+
+  ![Add New Book](./screenshots/seller_add_book.png)
+
 * **Responsive Visual Checks:** Checked viewport resizing using Chrome Developer tools. Glassmorphic cards adapt to mobile widths, folding multi-column catalog grids into single-column layouts cleanly.
 
 ---
